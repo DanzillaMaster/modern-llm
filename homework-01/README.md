@@ -112,4 +112,4 @@ Madam, I'll no good should have a castle again.
 | `outputs/sample.txt` | сгенерированный текст |
 | `data/tinyshakespeare.txt` | скачанный датасет |
 
-`model.pt` сохраняется после шага 1999, а не в точке с лучшим val loss.
+`model.pt` сохраняется после шага 1999, а не в точке с лучшим val loss. В репозиторий он не входит (19,7 МБ), появляется после запуска `train.py`. Датасет тоже скачивается при запуске.

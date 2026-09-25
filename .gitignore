@@ -13,7 +13,6 @@ venv/
 
 # Данные и артефакты обучения
 data/
-**/outputs/tensorboard/
 *.pt
 *.pth
 *.ckpt
