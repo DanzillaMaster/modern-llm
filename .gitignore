@@ -13,9 +13,11 @@ venv/
 
 # Данные и артефакты обучения
 data/
-outputs/model.pt
-outputs/tensorboard/
+**/outputs/tensorboard/
+*.pt
+*.pth
 *.ckpt
+*.safetensors
 
 # Экспорт чата курса
 ChatExport/
