@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Виртуальные окружения (uv.lock хранится в репозитории)
+.venv/
+venv/
+
+# Данные и артефакты обучения
+data/
+outputs/model.pt
+outputs/tensorboard/
+*.ckpt
+
+# Экспорт чата курса
+ChatExport/
+
+# macOS
+.DS_Store
+._*
+
+# Редакторы
+.idea/
+*.swp
