@@ -12,7 +12,7 @@ __pycache__/
 venv/
 
 # Данные и артефакты обучения
-data/
+*/data/
 *.pt
 *.pth
 *.ckpt
@@ -21,10 +21,19 @@ data/
 # Экспорт чата курса
 ChatExport/
 
+# Секреты (токены HF, API-ключи)
+.env
+.env.*
+
 # macOS
 .DS_Store
 ._*
 
-# Редакторы
+# Редакторы: корневой .vscode/ хранится в репозитории, .vscode/ внутри заданий нет
+*/.vscode/
 .idea/
 *.swp
+
+# Claude Code: личные настройки и заметки
+**/.claude/settings.local.json
+CLAUDE.local.md
