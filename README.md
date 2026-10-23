@@ -7,6 +7,7 @@
 | Папка | Задание | Что сделано |
 |---|---|---|
 | [`homework-01/`](homework-01/) | Llama 3 с нуля | архитектура Llama 3 на PyTorch (RMSNorm, RoPE, GQA, SwiGLU) и цикл обучения на Tiny Shakespeare |
+| [`homework-02/`](homework-02/) | FSDP | обучение Llama из ДЗ1 через PyTorch FSDP2 с шардированием по блокам трансформера |
 
 ## Запуск
 
@@ -23,11 +24,16 @@ uv run train.py
 
 ```
 modern-llm/
-└── homework-01/
-    ├── model.py         модель
-    ├── train.py         данные, обучение, логирование, генерация
+├── homework-01/
+│   ├── model.py         модель
+│   ├── train.py         данные, обучение, логирование, генерация
+│   ├── config.json      параметры модели и обучения
+│   ├── data/            датасет (скачивается автоматически)
+│   └── outputs/         графики, логи TensorBoard, чекпоинт, сэмплы
+└── homework-02/
+    ├── llama.zip        model.py и train.py из ДЗ1 без изменений
+    ├── train_fsdp.py    FSDP-обучение (запуск через torchrun)
     ├── config.json      параметры модели и обучения
-    ├── data/            датасет (скачивается автоматически)
     └── outputs/         графики, логи TensorBoard, чекпоинт, сэмплы
 ```
 
